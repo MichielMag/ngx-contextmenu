@@ -45,7 +45,8 @@
     "postversion": "git push origin HEAD && git push origin v$npm_new_version",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "yarn docs:json && start-storybook -p 6006",
-    "build-storybook": "yarn docs:json && build-storybook"
+    "build-storybook": "yarn docs:json && build-storybook",
+    "prepare": "npm run build:lib"
   },
   "private": false,
   "dependencies": {
